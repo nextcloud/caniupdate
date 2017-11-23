@@ -9,6 +9,8 @@
 	<author>Joas Schilling</author>
 	<version>0.1.0</version>
 
+	<screenshot>https://github.com/nextcloud/caniupdate/raw/master/docs/all-apps-available.png</screenshot>
+	<screenshot>https://github.com/nextcloud/caniupdate/raw/master/docs/has-missing-apps.png</screenshot>
 
 	<website>https://github.com/nextcloud/caniupdate</website>
 	<bugs>https://github.com/nextcloud/caniupdate/issues</bugs>
