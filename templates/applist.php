@@ -20,7 +20,7 @@
  */
 
 script('caniupdate', [
-	'vue',
+	'vue.min',
 	'components/root',
 	'app',
 ]);
