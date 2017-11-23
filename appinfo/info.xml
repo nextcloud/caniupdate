@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<info>
+	<id>caniupdate</id>
+	<name>Can I Update?</name>
+	<namespace>CanIUpdate</namespace>
+	<description><![CDATA[Checks whether there is an update for all of your apps available, so you can run the next major version of Nextcloud.]]></description>
+
+	<licence>AGPL</licence>
+	<author>Joas Schilling</author>
+	<version>0.1.0</version>
+
+
+	<website>https://github.com/nextcloud/caniupdate</website>
+	<bugs>https://github.com/nextcloud/caniupdate/issues</bugs>
+	<repository type="git">https://github.com/nextcloud/caniupdate.git</repository>
+
+	<dependencies>
+		<nextcloud min-version="12" max-version="13" />
+	</dependencies>
+
+	<settings>
+		<admin>OCA\CanIUpdate\Settings\AppList</admin>
+	</settings>
+</info>
