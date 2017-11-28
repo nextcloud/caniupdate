@@ -98,6 +98,6 @@ class APIController extends OCSController {
 	 */
 	protected function getAppDisplayName($appId) {
 		$app = \OC_App::getAppInfo($appId);
-		return $app['name'];
+		return isset($app['name']) ? $app['name'] : $appId;
 	}
 }
