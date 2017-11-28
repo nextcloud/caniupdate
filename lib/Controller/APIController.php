@@ -22,6 +22,7 @@
 namespace OCA\CanIUpdate\Controller;
 
 use OCA\CanIUpdate\FutureAppFetcher;
+use OCP\App\AppPathNotFoundException;
 use OCP\App\IAppManager;
 use OCP\AppFramework\Http\DataResponse;
 use OCP\AppFramework\OCSController;
@@ -72,6 +73,11 @@ class APIController extends OCSController {
 		// Get list of installed custom apps
 		$installedApps = $this->appManager->getInstalledApps();
 		$installedApps = array_filter($installedApps, function($app) {
+			try {
+				$this->appManager->getAppPath($app);
+			} catch (AppPathNotFoundException $e) {
+				return false;
+			}
 			return !$this->appManager->isShipped($app);
 		});
 
