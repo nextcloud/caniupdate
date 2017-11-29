@@ -38,6 +38,14 @@
 					this.vm.missing = response.ocs.data.missing;
 					this.vm.version = response.ocs.data.version;
 					this.vm.isListFetched = true;
+					this.vm.appstoreFailed = false;
+				}.bind(this),
+				error: function(xhr) {
+					this.vm.available = [];
+					this.vm.missing = [];
+					this.vm.version = xhr.responseJSON.ocs.data.version;
+					this.vm.isListFetched = true;
+					this.vm.appstoreFailed = true;
 				}.bind(this)
 			});
 		}

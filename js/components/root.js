@@ -41,6 +41,7 @@
 		data: {
 			available: [],
 			missing: [],
+			appstoreFailed: false,
 			isListFetched: false
 		},
 
@@ -55,11 +56,15 @@
 					return t('caniupdate', 'Checking …');
 				}
 
+				if (this.appstoreFailed) {
+					return t('caniupdate', 'Maybe');
+				}
+
 				return this.missing.length === 0 ? t('caniupdate', 'Yes!') : t('caniupdate', 'No!');
 			},
 
 			statusIcon: function() {
-				if (!this.isListFetched) {
+				if (!this.isListFetched || this.appstoreFailed) {
 					return 'indeterminate';
 				}
 
@@ -69,6 +74,10 @@
 			statusText: function() {
 				if (!this.isListFetched) {
 					return '';
+				}
+
+				if (this.appstoreFailed) {
+					return t('caniupdate', 'Could not connect to the appstore or the appstore returned no updates at all. Search manually for updates or make sure your server has access to the internet and can connect to the appstore.');
 				}
 
 				return this.missing.length === 0 ? t('caniupdate', 'All apps have a version for Nextcloud {version} available', this) : n('caniupdate',
