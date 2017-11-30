@@ -7,7 +7,7 @@
  * later. See the COPYING file.
  */
 
-(function(OC, OCA, $) {
+(function(OC, OCA) {
 	OCA.CanIUpdate = OCA.CanIUpdate || {};
 	OCA.CanIUpdate.Components = OCA.CanIUpdate.Components || {};
 
@@ -15,7 +15,7 @@
 		template: '' +
 		'<div class="section" id="caniupdate">' +
 		'	<h2 class="inlineblock">' +
-		'		Can I update? {{ canUpdate }}' +
+		'		'+ t('caniupdate', 'Can I update?') + ' {{ canUpdate }}' +
 		'	</h2>' +
 		'	<p v-if="isListFetched" class="inlineblock cronlog">' +
 		'		<span class="status" :class="statusIcon"></span>' +
@@ -23,13 +23,13 @@
 		'	</p>' +
 		'	<div class="applist">' +
 		'	<template v-if="missing.length">' +
-		'		<h3>Missing updates</h3>' +
+		'		<h3>' + t('caniupdate', 'Missing updates') + '</h3>' +
 		'		<ul>' +
 		'			<li v-for="app in missing">{{app}}</li>' +
 		'		</ul>'+
 		'	</template>' +
 		'	<template v-if="available.length">' +
-		'		<h3>Available updates</h3>' +
+		'		<h3>' + t('caniupdate', 'Available updates') + '</h3>' +
 		'		<ul>' +
 		'			<li v-for="app in available">{{app}}</li>' +
 		'		</ul>'+
@@ -57,7 +57,7 @@
 				}
 
 				if (this.appstoreFailed) {
-					return t('caniupdate', 'Maybe');
+					return t('caniupdate', 'Maybe …');
 				}
 
 				return this.missing.length === 0 ? t('caniupdate', 'Yes!') : t('caniupdate', 'No!');
@@ -87,4 +87,4 @@
 			}
 		}
 	};
-})(OC, OCA, $);
+})(OC, OCA);

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <info>
 	<id>caniupdate</id>
-	<name>Can I Update?</name>
+	<name>Can I update?</name>
 	<namespace>CanIUpdate</namespace>
 	<description><![CDATA[Checks whether there is an update for all of your apps available, so you can run the next major version of Nextcloud.]]></description>
 
