@@ -44,6 +44,7 @@
 					this.vm.available = [];
 					this.vm.missing = [];
 					this.vm.version = xhr.responseJSON.ocs.data.version;
+					this.vm.appstoreDisabled = xhr.responseJSON.ocs.data.appstore_disabled;
 					this.vm.isListFetched = true;
 					this.vm.appstoreFailed = true;
 				}.bind(this)
