@@ -19,7 +19,7 @@
 		'	</h2>' +
 		'	<p v-if="isListFetched" class="inlineblock cronlog">' +
 		'		<span class="status" :class="statusIcon"></span>' +
-		'		<span>{{ statusText }}</span>' +
+		'		<span v-html="statusText"></span>' +
 		'	</p>' +
 		'	<div class="applist">' +
 		'	<template v-if="missing.length">' +
@@ -42,6 +42,7 @@
 			available: [],
 			missing: [],
 			appstoreFailed: false,
+			appstoreDisabled: false,
 			isListFetched: false
 		},
 
@@ -56,6 +57,10 @@
 					return t('caniupdate', 'Checking …');
 				}
 
+				if (this.appstoreDisabled) {
+					return t('caniupdate', 'Appstore is disabled in your configuration.');
+				}
+
 				if (this.appstoreFailed) {
 					return t('caniupdate', 'Maybe …');
 				}
@@ -64,6 +69,10 @@
 			},
 
 			statusIcon: function() {
+				if (this.appstoreDisabled) {
+					return 'error';
+				}
+
 				if (!this.isListFetched || this.appstoreFailed) {
 					return 'indeterminate';
 				}
@@ -74,6 +83,10 @@
 			statusText: function() {
 				if (!this.isListFetched) {
 					return '';
+				}
+
+				if (this.appstoreDisabled) {
+					return t('caniupdate', 'Please make sure your config.php does not set <samp>appstoreenabled</samp> to false.');
 				}
 
 				if (this.appstoreFailed) {
