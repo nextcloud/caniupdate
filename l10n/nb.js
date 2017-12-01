@@ -2,6 +2,7 @@ OC.L10N.register(
     "caniupdate",
     {
     "Checking …" : "Sjekker…",
+    "Maybe …" : "Kanskje…",
     "Yes!" : "Ja!",
     "No!" : "Nei!",
     "All apps have a version for Nextcloud {version} available" : "Alle apper har en versjon for Nexcloud {version} tilgjengelig.",
