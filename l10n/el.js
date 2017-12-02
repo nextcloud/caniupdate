@@ -1,6 +1,9 @@
 OC.L10N.register(
     "caniupdate",
     {
+    "Can I update?" : "Μπορώ να κάνω ενημέρωση;",
+    "Missing updates" : "Ελλιπείς ενημερώσεις",
+    "Available updates" : "Διαθέσιμες ενημερώσεις",
     "Checking …" : "Γίνετε έλεγχος ...",
     "Yes!" : "Ναι!",
     "No!" : "Οχι!",
