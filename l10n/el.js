@@ -5,6 +5,7 @@ OC.L10N.register(
     "Missing updates" : "Ελλιπείς ενημερώσεις",
     "Available updates" : "Διαθέσιμες ενημερώσεις",
     "Checking …" : "Γίνετε έλεγχος ...",
+    "Maybe …" : "Ίσως",
     "Yes!" : "Ναι!",
     "No!" : "Οχι!",
     "All apps have a version for Nextcloud {version} available" : "Όλες οι εφαρμογές έχουνε μια έκδοση διαθέσιμη για το Nextcloud {version}."
