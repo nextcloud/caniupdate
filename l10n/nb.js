@@ -5,6 +5,7 @@ OC.L10N.register(
     "Missing updates" : "Manglende oppgraderinger",
     "Available updates" : "Tilgjengelige oppgraderinger",
     "Checking …" : "Sjekker…",
+    "Appstore is disabled in your configuration." : "Appbutikken er deaktivert i oppsettet ditt.",
     "Maybe …" : "Kanskje…",
     "Yes!" : "Ja!",
     "No!" : "Nei!",
