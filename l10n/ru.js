@@ -2,7 +2,7 @@ OC.L10N.register(
     "caniupdate",
     {
     "Can I update?" : "Обновление возможно?",
-    "Missing updates" : "Обновления отсутствую:",
+    "Missing updates" : "Обновления отсутствуют:",
     "Available updates" : "Имеются обновления:",
     "Checking …" : "Проверка...",
     "Appstore is disabled in your configuration." : "Магазин приложений отключён в настройках.",
