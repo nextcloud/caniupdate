@@ -7,7 +7,7 @@
 
 	<licence>AGPL</licence>
 	<author>Joas Schilling</author>
-	<version>0.1.1</version>
+	<version>0.1.2</version>
 
 	<screenshot>https://github.com/nextcloud/caniupdate/raw/master/docs/all-apps-available.png</screenshot>
 	<screenshot>https://github.com/nextcloud/caniupdate/raw/master/docs/has-missing-apps.png</screenshot>
