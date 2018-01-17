@@ -43,6 +43,7 @@
 			missing: [],
 			appstoreFailed: false,
 			appstoreDisabled: false,
+			alreadyOnLatest: false,
 			isListFetched: false
 		},
 
@@ -55,6 +56,10 @@
 			canUpdate: function() {
 				if (!this.isListFetched) {
 					return t('caniupdate', 'Checking …');
+				}
+
+				if (this.alreadyOnLatest) {
+					return t('caniupdate', 'You are already on the latest major version.');
 				}
 
 				if (this.appstoreDisabled) {
@@ -73,6 +78,10 @@
 					return 'error';
 				}
 
+				if (this.alreadyOnLatest) {
+					return 'success';
+				}
+
 				if (!this.isListFetched || this.appstoreFailed) {
 					return 'indeterminate';
 				}
@@ -83,6 +92,10 @@
 			statusText: function() {
 				if (!this.isListFetched) {
 					return '';
+				}
+
+				if (this.alreadyOnLatest) {
+					return t('caniupdate', 'This app will show results again, once Nextcloud 14 is close.');
 				}
 
 				if (this.appstoreDisabled) {

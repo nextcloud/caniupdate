@@ -62,12 +62,21 @@ class APIController extends OCSController {
 	public function getAppList() {
 		$version = $this->config->getSystemValue('version');
 		$version = explode('.', $version);
-		$futureVersion = $version[0] + 1;
+		$futureVersion = '13';
 		$this->appFetcher->setVersion($futureVersion . '.0.0.0');
+
+		if ($version[0] === $futureVersion) {
+			return new DataResponse([
+				'appstore_disabled' => false,
+				'already_on_latest' => true,
+				'version' => $futureVersion,
+			], Http::STATUS_METHOD_NOT_ALLOWED);
+		}
 
 		if (!$this->config->getSystemValue('appstoreenabled', true)) {
 			return new DataResponse([
 				'appstore_disabled' => true,
+				'already_on_latest' => false,
 				'version' => $futureVersion,
 			], Http::STATUS_NOT_FOUND);
 		}
@@ -80,6 +89,7 @@ class APIController extends OCSController {
 		if (empty($availableApps)) {
 			return new DataResponse([
 				'appstore_disabled' => false,
+				'already_on_latest' => false,
 				'version' => $futureVersion,
 			], Http::STATUS_NOT_FOUND);
 		}
