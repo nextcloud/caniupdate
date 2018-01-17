@@ -96,11 +96,11 @@ class APIController extends OCSController {
 		});
 
 		$missing = array_diff($installedApps, $availableApps);
-		$missing = array_map([$this, 'getAppDisplayName'], $missing);
+		$missing = array_map([$this, 'getAppDetails'], $missing);
 		sort($missing);
 
 		$available = array_intersect($installedApps, $availableApps);
-		$available = array_map([$this, 'getAppDisplayName'], $available);
+		$available = array_map([$this, 'getAppDetails'], $available);
 		sort($available);
 
 		return new DataResponse([
@@ -114,10 +114,13 @@ class APIController extends OCSController {
 	 * Get translated app name
 	 *
 	 * @param string $appId
-	 * @return string
+	 * @return string[]
 	 */
-	protected function getAppDisplayName($appId) {
+	protected function getAppDetails($appId) {
 		$app = \OC_App::getAppInfo($appId);
-		return isset($app['name']) ? $app['name'] : $appId;
+		return [
+			'appId' => $appId,
+			'appName' => isset($app['name']) ? $app['name'] : $appId,
+		];
 	}
 }
