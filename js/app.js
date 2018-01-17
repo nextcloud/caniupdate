@@ -39,12 +39,14 @@
 					this.vm.version = response.ocs.data.version;
 					this.vm.isListFetched = true;
 					this.vm.appstoreFailed = false;
+					this.vm.alreadyOnLatest = false;
 				}.bind(this),
 				error: function(xhr) {
 					this.vm.available = [];
 					this.vm.missing = [];
 					this.vm.version = xhr.responseJSON.ocs.data.version;
 					this.vm.appstoreDisabled = xhr.responseJSON.ocs.data.appstore_disabled;
+					this.vm.alreadyOnLatest = xhr.responseJSON.ocs.data.already_on_latest;
 					this.vm.isListFetched = true;
 					this.vm.appstoreFailed = true;
 				}.bind(this)
