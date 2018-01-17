@@ -25,13 +25,13 @@
 		'	<template v-if="missing.length">' +
 		'		<h3>' + t('caniupdate', 'Missing updates') + '</h3>' +
 		'		<ul>' +
-		'			<li v-for="app in missing">{{app}}</li>' +
+		'			<li v-for="app in missing">{{app.appName}} <a :href="\'https://apps.nextcloud.com/apps/\' + app.appId">' + t('caniupdate', 'View in store') + ' ↗</a></li>' +
 		'		</ul>'+
 		'	</template>' +
 		'	<template v-if="available.length">' +
 		'		<h3>' + t('caniupdate', 'Available updates') + '</h3>' +
 		'		<ul>' +
-		'			<li v-for="app in available">{{app}}</li>' +
+		'			<li v-for="app in available">{{app.appName}} <a :href="\'https://apps.nextcloud.com/apps/\' + app.appId">' + t('caniupdate', 'View in store') + ' ↗</a></li>' +
 		'		</ul>'+
 		'	</template>' +
 		'	</div>' +
