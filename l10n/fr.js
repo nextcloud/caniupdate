@@ -3,8 +3,10 @@ OC.L10N.register(
     {
     "Can I update?" : "Puis-je mettre à jour?",
     "Missing updates" : "Mises à jour manquantes",
+    "View in store" : "Afficher dans le magasin d'application",
     "Available updates" : "Mises à jours disponibles",
     "Checking …" : "Vérification en cours ...",
+    "You are already on the latest major version." : "Vous êtes déjà sur la dernière version majeure.",
     "Appstore is disabled in your configuration." : "L'appstore est désactivé dans votre configuration.",
     "Maybe …" : "Peut-être...",
     "Yes!" : "Oui !",
