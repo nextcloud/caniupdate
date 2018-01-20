@@ -103,7 +103,7 @@
 				}
 
 				if (this.appstoreFailed) {
-					return t('caniupdate', 'Could not connect to the store or it returned no upgrades at all. Search manually for updates or make sure your server has access to the internet and can connect to the store.');
+					return t('caniupdate', 'Could not connect to the store or it returned no upgrades at all. Search manually for updates or make sure your server has access to the Internet and can connect to the store.');
 				}
 
 				return this.missing.length === 0 ? t('caniupdate', 'All apps have a version for Nextcloud {version} available', this) : n('caniupdate',
