@@ -15,7 +15,7 @@
 		template: '' +
 		'<div class="section" id="caniupdate">' +
 		'	<h2 class="inlineblock">' +
-		'		'+ t('caniupdate', 'Can I update?') + ' {{ canUpdate }}' +
+		'		'+ t('caniupdate', 'Can I upgrade?') + ' {{ canUpdate }}' +
 		'	</h2>' +
 		'	<p v-if="isListFetched" class="inlineblock cronlog">' +
 		'		<span class="status" :class="statusIcon"></span>' +
@@ -25,13 +25,13 @@
 		'	<template v-if="missing.length">' +
 		'		<h3>' + t('caniupdate', 'Missing updates') + '</h3>' +
 		'		<ul>' +
-		'			<li v-for="app in missing">{{app.appName}} <a :href="\'https://apps.nextcloud.com/apps/\' + app.appId">' + t('caniupdate', 'View in store') + ' ↗</a></li>' +
+		'			<li v-for="app in missing">{{app.appName}} <a :href="\'https://apps.nextcloud.com/\' + app.appId">' + t('caniupdate', 'View in store') + ' ↗</a></li>' +
 		'		</ul>'+
 		'	</template>' +
 		'	<template v-if="available.length">' +
-		'		<h3>' + t('caniupdate', 'Available updates') + '</h3>' +
+		'		<h3>' + t('caniupdate', 'Available new versions') + '</h3>' +
 		'		<ul>' +
-		'			<li v-for="app in available">{{app.appName}} <a :href="\'https://apps.nextcloud.com/apps/\' + app.appId">' + t('caniupdate', 'View in store') + ' ↗</a></li>' +
+		'			<li v-for="app is available">{{app.appName}} <a :href="\'https://apps.nextcloud.com/\' + app.appId">' + t('caniupdate', 'View in store') + ' ↗</a></li>' +
 		'		</ul>'+
 		'	</template>' +
 		'	</div>' +
@@ -63,7 +63,7 @@
 				}
 
 				if (this.appstoreDisabled) {
-					return t('caniupdate', 'Appstore is disabled in your configuration.');
+					return t('caniupdate', 'Store is disabled in your configuration.');
 				}
 
 				if (this.appstoreFailed) {
@@ -95,7 +95,7 @@
 				}
 
 				if (this.alreadyOnLatest) {
-					return t('caniupdate', 'This app will show results again, once Nextcloud 14 is close.');
+					return t('caniupdate', 'This app will show results again, once Nextcloud 14 is closed.');
 				}
 
 				if (this.appstoreDisabled) {
@@ -103,7 +103,7 @@
 				}
 
 				if (this.appstoreFailed) {
-					return t('caniupdate', 'Could not connect to the appstore or the appstore returned no updates at all. Search manually for updates or make sure your server has access to the internet and can connect to the appstore.');
+					return t('caniupdate', 'Could not connect to the store or it returned no upgrades at all. Search manually for updates or make sure your server has access to the internet and can connect to the store.');
 				}
 
 				return this.missing.length === 0 ? t('caniupdate', 'All apps have a version for Nextcloud {version} available', this) : n('caniupdate',
