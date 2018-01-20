@@ -5,6 +5,7 @@ OC.L10N.register(
     "Missing updates" : "Hiányzó frissítések",
     "Available updates" : "Elérhető frissítések",
     "Checking …" : "Ellenőrzés …",
+    "You are already on the latest major version." : "Már a legfrissebb főverzió van használatban.",
     "Appstore is disabled in your configuration." : "Az appstore ki van kapcsolva a beállításodban.",
     "Maybe …" : "Talán...",
     "Yes!" : "Igen!",
