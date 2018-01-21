@@ -3,8 +3,10 @@ OC.L10N.register(
     {
     "Can I update?" : "Kan jeg oppgradere?",
     "Missing updates" : "Manglende oppgraderinger",
+    "View in store" : "Vis i butikk",
     "Available updates" : "Tilgjengelige oppgraderinger",
     "Checking …" : "Sjekker…",
+    "You are already on the latest major version." : "Du er allerede på siste hovedversjon.",
     "Appstore is disabled in your configuration." : "Appbutikken er deaktivert i oppsettet ditt.",
     "Maybe …" : "Kanskje…",
     "Yes!" : "Ja!",
