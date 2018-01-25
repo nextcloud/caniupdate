@@ -1,8 +1,10 @@
 { "translations": {
     "Can I update?" : "¿Puedo actualizar?",
     "Missing updates" : "Actualizaciones faltantes",
+    "View in store" : "Ver en tienda",
     "Available updates" : "Actualizaciones disponibles",
     "Checking …" : "Verificando ...",
+    "You are already on the latest major version." : "Ya te encuentras en la versión mayor más reciente. ",
     "Appstore is disabled in your configuration." : "La appstore está deshabilitada en tu configuración.",
     "Maybe …" : "Tal vez ...",
     "Yes!" : "¡Sí!",
