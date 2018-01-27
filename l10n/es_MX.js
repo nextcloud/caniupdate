@@ -11,6 +11,7 @@ OC.L10N.register(
     "Maybe …" : "Tal vez ...",
     "Yes!" : "¡Sí!",
     "No!" : "¡No!",
+    "This app will show results again, once Nextcloud 14 is close." : "Esta aplicación volverá a mostrar resultados una vez que Nextcloud 14 se encuentre próximo. ",
     "Please make sure your config.php does not set <samp>appstoreenabled</samp> to false." : "Por favor, asegurate de que tu archivo config.php no establezca <samp>appstoreenabled</samp> a falso.",
     "Could not connect to the appstore or the appstore returned no updates at all. Search manually for updates or make sure your server has access to the internet and can connect to the appstore." : "No fue posible conectarse a la appstore o bien la appstore no regresó actualizaciones. Busca manualmente actualizaciones o asegurate de que el servidor tenga acceso a Internet y que pueda conectarse a la appstore. ",
     "All apps have a version for Nextcloud {version} available" : "Todas las aplicaciones tienen una versión para Nextcloud {version} disponible",
