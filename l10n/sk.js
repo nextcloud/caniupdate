@@ -1,7 +1,9 @@
 OC.L10N.register(
     "caniupdate",
     {
+    "Can I update?" : "Môžem aktualizovať?",
     "Missing updates" : "Chýbajúce aktualizácie",
+    "View in store" : "Zobraziť v obchode",
     "Available updates" : "Dostupné aktualizácie",
     "Checking …" : "Kontrolujem ...",
     "Maybe …" : "Možno ...",
