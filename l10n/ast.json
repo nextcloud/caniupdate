@@ -1,6 +1,7 @@
 { "translations": {
     "Can I update?" : "¿Pueo anovar?",
     "Missing updates" : "Anovamientos faltantes",
+    "View in store" : "Ver na tienda",
     "Available updates" : "Anovamientos disponibles",
     "Checking …" : "Comprobando...",
     "Appstore is disabled in your configuration." : "La tienda d'aplicaciones ta desactivada na configuración.",
