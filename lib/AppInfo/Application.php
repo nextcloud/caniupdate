@@ -29,5 +29,36 @@ class Application extends App {
 	}
 
 	public function register() {
+		$config = $this->getContainer()->getServer()->getConfig();
+
+		if ($config->getAppValue('caniupdate', 'published-deprecation-notification', 'no') === 'yes') {
+			return;
+		}
+
+		$notificationManager = $this->getContainer()->getServer()->getNotificationManager();
+		$groupManager = $this->getContainer()->getServer()->getGroupManager();
+
+		$notification = $notificationManager->createNotification();
+		$time = time();
+		$datetime = new \DateTime();
+		$datetime->setTimestamp($time);
+
+		try {
+			$notification->setApp('admin_notifications')
+				->setDateTime($datetime)
+				->setObject('admin_notifications', dechex($time))
+				->setSubject('cli', ['App "caniupdate" is obsolete'])
+				->setMessage('cli', ['The functionality of the "caniupdate" app has been merged into the update notifications app for Nextcloud 14. You can safely uninstall and delete the "caniupdate" app, because it does not do anything anymore.']);
+
+			$admins = $groupManager->get('admin');
+			foreach ($admins->getUsers() as $admin) {
+				$notification->setUser($admin->getUID());
+				$notificationManager->notify($notification);
+			}
+		} catch (\InvalidArgumentException $e) {
+			return;
+		}
+
+		$config->setAppValue('caniupdate', 'published-deprecation-notification', 'yes');
 	}
 }
