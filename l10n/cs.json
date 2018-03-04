@@ -1,8 +1,10 @@
 { "translations": {
     "Can I update?" : "Mohu aktualizovat?",
     "Missing updates" : "Chybějící aktualizace",
+    "View in store" : "Zobrazit v obchodu",
     "Available updates" : "Dostupné aktualizace",
     "Checking …" : "Kontrolování ...",
+    "You are already on the latest major version." : "Již máte poslední verzi",
     "Appstore is disabled in your configuration." : "Appstore je ve vaší konfiguraci vypnutý.",
     "Maybe …" : "Možná ...",
     "Yes!" : "Ano!",
