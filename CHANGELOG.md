@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 0.2.0 – 2018-03-01
+### Changed
+ - App "caniupdate" is obsoleted with Nextcloud 14 [#2692](https://github.com/nextcloud/server/pull/2692)
+
 ## 0.1.2 – 2018-01-17
 ### Added
  - There is now a link to the appstore page from each app [#11](https://github.com/nextcloud/caniupdate/pull/11)

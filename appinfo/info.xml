@@ -3,11 +3,14 @@
 	<id>caniupdate</id>
 	<name>Can I update?</name>
 	<namespace>CanIUpdate</namespace>
-	<description><![CDATA[Checks whether there is an update for all of your apps available, so you can run the next major version of Nextcloud.]]></description>
+	<summary>Obsoleted with Nextcloud 14: Please uninstall this app</summary>
+	<description><![CDATA[**Obsoleted with Nextcloud 14:** The functionality of the "caniupdate" app has been merged into the "Update notifications" app for Nextcloud 14. You can savely uninstall and delete the "caniupdate" app, because it does not do anything anymore.
+
+Checks whether there is an update for all of your apps available, so you can run the next major version of Nextcloud.]]></description>
 
 	<licence>AGPL</licence>
 	<author>Joas Schilling</author>
-	<version>0.1.2</version>
+	<version>0.2.0</version>
 
 	<screenshot>https://github.com/nextcloud/caniupdate/raw/master/docs/all-apps-available.png</screenshot>
 	<screenshot>https://github.com/nextcloud/caniupdate/raw/master/docs/has-missing-apps.png</screenshot>
@@ -17,10 +20,6 @@
 	<repository type="git">https://github.com/nextcloud/caniupdate.git</repository>
 
 	<dependencies>
-		<nextcloud min-version="12" max-version="13" />
+		<nextcloud min-version="14" max-version="14" />
 	</dependencies>
-
-	<settings>
-		<admin>OCA\CanIUpdate\Settings\AppList</admin>
-	</settings>
 </info>
