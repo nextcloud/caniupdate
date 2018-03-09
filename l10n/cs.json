@@ -1,17 +1,4 @@
 { "translations": {
-    "Can I update?" : "Mohu aktualizovat?",
-    "Missing updates" : "Chybějící aktualizace",
-    "View in store" : "Zobrazit v obchodu",
-    "Available updates" : "Dostupné aktualizace",
-    "Checking …" : "Kontrolování ...",
-    "You are already on the latest major version." : "Již máte poslední verzi",
-    "Appstore is disabled in your configuration." : "Appstore je ve vaší konfiguraci vypnutý.",
-    "Maybe …" : "Možná ...",
-    "Yes!" : "Ano!",
-    "No!" : "Ne!",
-    "Please make sure your config.php does not set <samp>appstoreenabled</samp> to false." : "Prosím, ujistěte se, že ve vašem config.php není nastaveno <samp>appstoreenabled</samp> na false.",
-    "Could not connect to the appstore or the appstore returned no updates at all. Search manually for updates or make sure your server has access to the internet and can connect to the appstore." : "K appstore se nelze připojit, nebo nevrátil žádné dostupné aktualizace. Zkuste aktualizace hledat ručně, nebo se přesvědčte, že má váš server přístup k internetu a může se k appstore připojit.",
-    "All apps have a version for Nextcloud {version} available" : "Všechny aplikace mají dostupnou verzi pro Nextcloud {version}",
-    "_%n app has no version for Nextcloud {version} available_::_%n apps have no version for Nextcloud {version} available_" : ["%n aplikace není dostupná pro verzi Nextcloud {version}","%n aplikace nejsou dostupné pro verzi Nextcloud {version}","%n aplikace nejsou dostupné pro verzi Nextcloud {version}"]
+    "Can I update?" : "Mohu aktualizovat?"
 },"pluralForm" :"nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;"
 }
