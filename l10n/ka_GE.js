@@ -3,4 +3,4 @@ OC.L10N.register(
     {
     "Can I update?" : "შემიძლია განვანახლო?"
 },
-"nplurals=1; plural=0;");
+"nplurals=2; plural=(n==1);");
