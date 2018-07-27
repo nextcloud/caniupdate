@@ -23,17 +23,9 @@ namespace OCA\CanIUpdate\Settings;
 
 
 use OCP\AppFramework\Http\TemplateResponse;
-use OCP\IConfig;
 use OCP\Settings\ISettings;
 
 class AppList implements ISettings {
-
-	/** @var IConfig */
-	private $config;
-
-	public function __construct(IConfig $config) {
-		$this->config = $config;
-	}
 
 	/**
 	 * @return TemplateResponse

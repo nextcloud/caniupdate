@@ -62,7 +62,7 @@ class APIController extends OCSController {
 	public function getAppList() {
 		$version = $this->config->getSystemValue('version');
 		$version = explode('.', $version);
-		$futureVersion = '13';
+		$futureVersion = '14';
 		$this->appFetcher->setVersion($futureVersion . '.0.0.0');
 
 		if ($version[0] === $futureVersion) {
