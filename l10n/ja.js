@@ -12,7 +12,7 @@ OC.L10N.register(
     "Yes!" : "はい！",
     "No!" : "いいえ！",
     "This app will show results again, once Nextcloud 14 is close." : "NextCloud 14が終了すると、このアプリは再び結果を表示します。",
-    "All apps have a version for Nextcloud {version} available" : "すべてのアプリには、Nextcloud {バージョン}用のバージョンがあります",
-    "_%n app has no version for Nextcloud {version} available_::_%n apps have no version for Nextcloud {version} available_" : ["%n個のアプリにはNextcloud {バージョン}のバージョンがありません"]
+    "All apps have a version for Nextcloud {version} available" : "すべてのアプリには、Nextcloud {version} 用のバージョンがあります",
+    "_%n app has no version for Nextcloud {version} available_::_%n apps have no version for Nextcloud {version} available_" : ["%n個のアプリにはNextcloud {version} のバージョンがありません"]
 },
 "nplurals=1; plural=0;");
