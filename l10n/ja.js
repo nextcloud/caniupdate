@@ -2,6 +2,7 @@ OC.L10N.register(
     "caniupdate",
     {
     "Can I update?" : "アップデートできますか?",
+    "Obsoleted with Nextcloud 14: Please uninstall this app" : "Nextcloud 14で廃止されました：このアプリをアンインストールしてください",
     "Missing updates" : "更新が不足",
     "View in store" : "ストア内で表示",
     "Available updates" : "利用可能なアップデート",
