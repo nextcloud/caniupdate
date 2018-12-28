@@ -1,0 +1,9 @@
+{ "translations": {
+    "Can I update?" : "Eguneratu dezaket?",
+    "Missing updates" : "Eguneraketak faltan",
+    "Checking …" : "Egiaztatzen ...",
+    "Maybe …" : "Agian …",
+    "Yes!" : "Bai!",
+    "No!" : "Ez!"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}
