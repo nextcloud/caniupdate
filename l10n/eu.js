@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "Can I update?" : "Eguneratu dezaket?",
     "Missing updates" : "Eguneraketak faltan",
+    "Available updates" : "Eguneraketa eskuragarriak",
     "Checking …" : "Egiaztatzen ...",
     "Maybe …" : "Agian …",
     "Yes!" : "Bai!",
