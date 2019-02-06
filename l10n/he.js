@@ -15,6 +15,7 @@ OC.L10N.register(
     "No!" : "לא!",
     "This app will show results again, once Nextcloud 14 is close." : "יישומון זה יציג תוצאות שוב עם ההתקרבות של Nextcloud 14.",
     "Please make sure your config.php does not set <samp>appstoreenabled</samp> to false." : "נא לוודא שב־config.php שלך ה־<samp>appstoreenabled</samp> לא מוגדר ל‏־false.",
+    "Could not connect to the appstore or the appstore returned no updates at all. Search manually for updates or make sure your server has access to the internet and can connect to the appstore." : "לא ניתן להתחבר לחנות היישומונים או שחנות היישומונים לא החזירה שיש עדכונים. ניתן לחפש ידנית עדכונים או לוודא שלשרת שלך יש גישה לאינטרנט ושיש לו איך להתחבר לחנות היישומונים.",
     "All apps have a version for Nextcloud {version} available" : "לכל היישומים יש גרסה זמינה ל־Nextcloud {version}",
     "_%n app has no version for Nextcloud {version} available_::_%n apps have no version for Nextcloud {version} available_" : ["ליישום אחד אין גרסה זמינה עבור Nextcloud {version}","ל־%n יישומים אין גרסה זמינה ל־Nextcloud {version}","ל־%n יישומים אין גרסה זמינה ל־Nextcloud {version} ","ל־%n יישומים אין גרסה זמינה ל־Nextcloud {version} "],
     "Checks whether there is an update for all of your apps available, so you can run the next major version of Nextcloud." : "ביצוע בדיקה האם יש עדכונים זמינים לכל היישומונים שלך, כדי לאשר לך להריץ את הגרסה העיקרית העדכנית ביותר של Nextcloud."
